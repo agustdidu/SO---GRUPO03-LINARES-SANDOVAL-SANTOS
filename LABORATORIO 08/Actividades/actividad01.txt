@@ -1,0 +1,11 @@
+ACTIVIDADES
+
+1.a Mostrar cuantos archivos .txt existen
+ls *.txt | wc -l 
+
+1.b Buscar archivo o carpetas que contengan la palabra “reporte” 
+ls | grep "reporte" | wc -l
+
+1.C. Mostrar Cuántos procesos ejecuta el usuario actual 
+ps -u $USER | wc -l 
+ps -u $USER --no-headers | wc -l

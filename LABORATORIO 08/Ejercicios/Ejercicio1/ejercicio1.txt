@@ -1,0 +1,27 @@
+#a) mostrar 5 archivos o carpetas màs grandes
+du -ah . | sort -rh | head -5
+
+#b) contar lineas del archivo datos.txt
+cat datos.txt | wc -l
+
+#c) contar lìnas de alumnos.txt con la palabra aprobado
+cat alumnos.txt | grep "aprobado" | wc -l
+
+#d) leer nombres.txt, ordernar alfabèticamente y mostrr 5 1ros
+cat nombres.txt | sort | head -5
+
+#e) contar usarios conectados actualmente
+who | wc -l 
+
+#f) procesos relacionados con Firefox estàn ejecutàndose
+ps aux | grep firefox | grep -v grep | wc -l
+
+#g) 20 ùltimas lineas de sistema.log muestra las que tienen ERROR
+#tail -20 sistema.log | grep "ERROR"
+echo -e "Línea 1\nERROR: Fallo de red virtual\nLínea 3\nERROR: Disco lleno" > prueba.log
+
+tail -n 20 prueba.log | grep "ERROR"
+
+#h) contar cuantas carpetas existene en el directorio actual
+ls -l | grep "^d" | wc -l
+
