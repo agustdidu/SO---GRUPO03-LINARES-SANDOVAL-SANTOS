@@ -1,0 +1,16 @@
+#!/bin/bash
+
+regex='^((?=(.*[a-zA-Z]){3,})(?=.*[0-9])(?=.*[@$])).+$'
+
+while true; do
+    read -s -p "Ingrese contraseña: " password
+    echo ""
+
+    if [[ $password =~ ^(?=(.*[a-zA-Z]){3,})(?=.*[0-9])(?=.*[@$]).+$ ]]; then
+        echo "✔ Contraseña válida"
+        echo "Contraseña ingresada: $password"
+        break
+    else
+        echo "✘ Contraseña inválida, intenta de nuevo"
+    fi
+done
