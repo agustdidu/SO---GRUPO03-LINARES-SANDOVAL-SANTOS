@@ -1,0 +1,10 @@
+Lima
+Arequipa
+Cusco
+Buenos Aires
+Rio de Janeiro
+Lima se encuentra en Perú
+Arequipa se encuentra en Perú
+Cusco se encuentra en Perú
+Se encontró la ciudad: Buenos Aires
+Se encontró la ciudad: Rio de Janeiro

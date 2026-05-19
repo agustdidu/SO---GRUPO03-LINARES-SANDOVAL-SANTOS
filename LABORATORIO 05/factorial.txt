@@ -1,0 +1,1 @@
+El factorial de 4 es: 24
