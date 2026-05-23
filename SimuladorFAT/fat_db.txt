@@ -1,0 +1,7 @@
+# fat_db.txt - Base de datos del Simulador FAT
+# id | nombre | tipo | padre | permisos | tamano
+0|/|DIR|-1|rwx|-
+1|archivo|DIR|0|rwx|-
+2|mafer|DIR|0|rwx|-
+3|rocio|DIR|0|rwx|-
+4|roy|DIR|0|rwx|-
